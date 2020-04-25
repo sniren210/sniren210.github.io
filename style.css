@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+body{
+	background: linear-gradient(235deg,#766aff,#a267dd,#ea458a);
+}
+
+.main{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main h3{
+	color: white;
+	font-size: 24px;
+	line-height: 60px;
+}
+
+.button{
+	width: 60px;
+	height: 45px;
+	font-size: 22px;
+	cursor: pointer;
+}
+
+.textview{
+	width: 245px;
+	height: 45px;
+	font-size: 22px;
+	padding: 5px;
+}
