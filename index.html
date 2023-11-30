@@ -1,687 +1,570 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8" />
-    <title>Portfolio Rendi</title>
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <!-- mobile specific metas
+<head>
+  <!--- basic page needs
     ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>Portfolio Rendi</title>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <!-- CSS
+  <!-- mobile specific metas
     ================================================== -->
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/vendor.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- script
+  <!-- CSS
     ================================================== -->
-    <script src="js/modernizr.js"></script>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/vendor.css" />
 
-    <!-- favicons
+  <!-- script
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-  </head>
+  <script src="js/modernizr.js"></script>
 
-  <body id="top">
-    <!-- preloader
+  <!-- favicons
     ================================================== -->
-    <div id="preloader">
-      <div id="loader" class="dots-fade">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+</head>
+
+<body id="top">
+  <!-- preloader
+    ================================================== -->
+  <div id="preloader">
+    <div id="loader" class="dots-fade">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- header
+    ================================================== -->
+  <header class="s-header">
+    <div class="header-logo">
+      <a href="index.html">
+        <img src="images/logo tranparant.png" width="500" alt="Homepage" />
+      </a>
     </div>
 
-    <!-- header
+    <div class="header-content">
+      <nav class="row header-nav-wrap">
+        <ul class="header-nav">
+          <li><a class="smoothscroll" href="#hero" title="Intro">Home</a></li>
+          <li>
+            <a class="smoothscroll" href="#about" title="About">About</a>
+          </li>
+          <li>
+            <a class="smoothscroll" href="#portfolio" title="Works">Works</a>
+          </li>
+          <li>
+            <a href="mailto:sniren2002@gmail.com" title="Contact us">Say Hello</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- end header-nav-wrap -->
+    </div>
+    <!-- end header-content -->
+
+    <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+  </header>
+
+  <!-- hero
     ================================================== -->
-    <header class="s-header">
-      <div class="header-logo">
-        <a href="index.html">
-          <img src="images/logo tranparant.png" width="500" alt="Homepage" />
-        </a>
+  <section id="hero" class="s-hero target-section" data-parallax="scroll" data-image-src="images/services-bg-3000.jpg"
+    data-natural-width="3000" data-natural-height="2000" data-position-y="center">
+    <div class="row hero-content">
+      <div class="column large-full">
+        <h1>
+          Hello, I'm Rendi Dwi Kurniasandi, <br />
+          a flutter developer <br />
+          & web developer <br />
+        </h1>
+
+        <ul class="hero-social">
+          <li>
+            <a href="https://www.instagram.com/r3ndks/" title="">Instagram</a>
+          </li>
+          <li>
+            <a href="https://github.com/sniren210" title="">Github</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/rendi-dwi-kurniasandi-9442571b6/" title="">LinkedIn</a>
+          </li>
+        </ul>
+        <!-- end hero-social -->
       </div>
+    </div>
+    <!-- end hero-content -->
 
-      <div class="header-content">
-        <nav class="row header-nav-wrap">
-          <ul class="header-nav">
-            <li><a class="smoothscroll" href="#hero" title="Intro">Home</a></li>
-            <li>
-              <a class="smoothscroll" href="#about" title="About">About</a>
-            </li>
-            <li>
-              <a class="smoothscroll" href="#portfolio" title="Works">Works</a>
-            </li>
-            <li>
-              <a href="mailto:sniren2002@gmail.com" title="Contact us"
-                >Say Hello</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <!-- end header-nav-wrap -->
-      </div>
-      <!-- end header-content -->
+    <div class="hero-scroll">
+      <a href="#about" class="scroll-link smoothscroll">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M12 24l-8-9h6v-15h4v15h6z" />
+        </svg>
+      </a>
+    </div>
+    <!-- end hero-scroll -->
+  </section>
+  <!-- end s-hero -->
 
-      <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
-    </header>
-
-    <!-- hero
+  <!-- about
     ================================================== -->
-    <section
-      id="hero"
-      class="s-hero target-section"
-      data-parallax="scroll"
-      data-image-src="images/services-bg-3000.jpg"
-      data-natural-width="3000"
-      data-natural-height="2000"
-      data-position-y="center"
-    >
-      <div class="row hero-content">
-        <div class="column large-full">
-          <h1>
-            Hello, I'm Rendi Dwi Kurniasandi, <br />
-            a flutter developer <br />
-            & web developer <br />
-          </h1>
+  <section id="about" class="s-about target-section">
+    <div class="s-about__section s-about__section--profile">
+      <div class="right-vert-line"></div>
 
-          <ul class="hero-social">
-            <li>
-              <a href="https://www.instagram.com/r3ndks/" title="">Instagram</a>
-            </li>
-            <li>
-              <a href="https://github.com/sniren210" title="">Github</a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/rendi-dwi-kurniasandi-9442571b6/"
-                title=""
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
-          <!-- end hero-social -->
+      <div class="row">
+        <div class="column large-6 medium-8 tab-full">
+          <div class="section-intro" data-num="01" data-aos="fade-up">
+            <h3 class="subhead">About Me</h3>
+            <h1 class="display-1">
+              I am the kind of person who is very curious about many things.
+            </h1>
+          </div>
+
+          <div class="profile-pic" data-aos="fade-up" style="display: block">
+            <img src="images/rendi.jpg" alt="" />
+          </div>
+
+          <h3 data-aos="fade-up">Profile</h3>
+
+          <p data-aos="fade-up">
+            Introduce me, I am a Experienced mobile application developer with a track record of success in creating
+            well-received and commercially viable applications. Skilled at working as a team and incorporating input
+            into projects. The ability to always look for ways to improve existing applications so that people continue
+            to download and enjoy them in the Playstore and Appstore. A strong eye for detail and tenacity to complete
+            every project on time or ahead of schedule
+            <br />
+            <br />
+            I create and develop responsive and interactive applications using flutter as my main programming language
+          </p>
         </div>
       </div>
-      <!-- end hero-content -->
+    </div>
+    <!-- end s-about__section--profile -->
 
-      <div class="hero-scroll">
-        <a href="#about" class="scroll-link smoothscroll">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M12 24l-8-9h6v-15h4v15h6z" />
-          </svg>
-        </a>
+    <div class="s-about__section">
+      <div class="row">
+        <div class="column">
+          <h3 data-aos="fade-up">Career</h3>
+        </div>
       </div>
-      <!-- end hero-scroll -->
-    </section>
-    <!-- end s-hero -->
 
-    <!-- about
+      <div class="row block-large-1-2 block-900-full work-positions">
+        <div class="column" data-aos="fade-up">
+          <div class="position">
+            <div class="position__header">
+              <h6>
+                <span class="position__co">Little Wallet</span>
+                <span class="position__pos">Flutter App Developer</span>
+              </h6>
+              <div class="position__timeframe">
+                January 2023 - November 2023
+              </div>
+            </div>
+
+            <p>
+              Build a money management app designed to teach teens and kids the value of money, and how to learn, earn,
+              budget, and save in a fun way with a touch of gamification! The sooner children learn about money, the
+              more independent and responsible they will be in adulthood.
+            </p>
+          </div>
+        </div>
+        <!-- end column -->
+        <div class="column" data-aos="fade-up">
+          <div class="position">
+            <div class="position__header">
+              <h6>
+                <span class="position__co">Xetia Indo Internasional</span>
+                <span class="position__pos">Flutter App Developer</span>
+              </h6>
+              <div class="position__timeframe">
+                Desember 2020 - Desember 2022
+              </div>
+            </div>
+
+            <p>
+              Companies that have a strong hold in the field of Artificial
+              Intelligence, are able to carry out various analyzes by
+              utilizing the most updated technology to perform all digital
+              activities instantly.
+            </p>
+          </div>
+        </div>
+        <!-- end column -->
+        <div class="column" data-aos="fade-up">
+          <div class="position">
+            <div class="position__header">
+              <h6>
+                <span class="position__co">Fiver and Fastwork</span>
+                <span class="position__pos">Freelancer Front end Web</span>
+              </h6>
+              <div class="position__timeframe">June 2019 - Desember 2020</div>
+            </div>
+            <p>Experienced freelance on the Fiver and Fastwork platform and has got customers in various countries with
+              more than 100 customers, providers on the website development platform and flutter development tools</p>
+          </div>
+        </div>
+        <!-- end column -->
+        <div class="column" data-aos="fade-up">
+          <div class="position">
+            <div class="position__header">
+              <h6>
+                <span class="position__co">Mirai Dev</span>
+                <span class="position__pos">Back end Developer</span>
+              </h6>
+              <div class="position__timeframe">June 2016 - Desember 2020</div>
+            </div>
+
+            <p>an association I created to solve problems from school.</p>
+          </div>
+        </div>
+        <!-- end column -->
+      </div>
+      <!-- work positions -->
+    </div>
+    <!-- end s-about__section -->
+  </section>
+  <!-- end s-about -->
+
+  <!-- portfolio
     ================================================== -->
-    <section id="about" class="s-about target-section">
-      <div class="s-about__section s-about__section--profile">
-        <div class="right-vert-line"></div>
+  <section id="portfolio" class="s-portfolio target-section">
+    <div class="row s-portfolio__header">
+      <div class="column large-6 medium-8 tab-full">
+        <div class="section-intro" data-num="02" data-aos="fade-up">
+          <h3 class="subhead">Portfolio</h3>
+          <h1 class="display-1">
+            A selection of recent projects I have worked on.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- s-porfolio__header -->
 
-        <div class="row">
-          <div class="column large-6 medium-8 tab-full">
-            <div class="section-intro" data-num="01" data-aos="fade-up">
-              <h3 class="subhead">About Me</h3>
-              <h1 class="display-1">
-                I am the kind of person who is very curious about many things.
-              </h1>
-            </div>
-
-            <div class="profile-pic" data-aos="fade-up" style="display: block">
-              <img src="images/rendi.jpg" alt="" />
-            </div>
-
-            <h3 data-aos="fade-up">Profile</h3>
-
-            <p data-aos="fade-up">
-              Introduce me, I am a Part time Programming Freelancer who has a
-              market in fastwork and fiver, besides being a programmer, I can
-              also design Corel draw or Photoshop.
-              <br />
-              <br />
-              Software Engineering Fresh Graduate at Vocational Highschool 1
-              Majalengka.Website,Robotics, Flutter, and Machine Learning
-              Enthusiast.
+    <div class="row s-porfolio__list block-large-1-2 block-tab-full collapse">
+      <div class="column" data-aos="fade-up">
+        <div class="folio-item">
+          <div class="folio-item__thumb">
+            <a class="folio-item__thumb-link" href="images/portfolio/miraima.png" title="Miraima" data-size="1050x700">
+              <img src="images/portfolio/miraima.png" srcset="
+                    images/portfolio/miraima.png 1x,
+                    images/portfolio/miraima.png 2x
+                  " alt="Miraima" />
+            </a>
+          </div>
+          <div class="folio-item__info">
+            <div class="folio-item__cat">MiraiDev</div>
+            <h4 class="folio-item__title">Miraima</h4>
+          </div>
+          <a href="https://github.com/sniren210/miraima" title="Project Link" class="folio-item__project-link">Project
+            Link</a>
+          <div class="folio-item__caption">
+            <p>
+              Wall magazines, or what is commonly abbreviated as madding, are
+              now very rarely paid attention to, in fact not many people even
+              approach the wall magazine even to have a quick look. In fact,
+              wall magazines are a place to send our work to schools.
+            </p>
+            <p>
+              Well, Miraima is here now. Wall magazines, which were originally
+              offline aliases, had a form, now they are on your cellphone and
+              PC. Miraima, an online magazine, allows all works that were
+              originally posted on the bulletin board, now it only takes one
+              click to upload. Save paper and costs and certainly more
+              efficient. Any works that wish to be exhibited can immediately
+              be exhibited at Miraima
             </p>
           </div>
         </div>
       </div>
-      <!-- end s-about__section--profile -->
-
-      <div class="s-about__section">
-        <div class="row">
-          <div class="column">
-            <h3 data-aos="fade-up">Career</h3>
-          </div>
-        </div>
-
-        <div class="row block-large-1-2 block-900-full work-positions">
-          <div class="column" data-aos="fade-up">
-            <div class="position">
-              <div class="position__header">
-                <h6>
-                  <span class="position__co">Xetia</span>
-                  <span class="position__pos">Flutter App Developer</span>
-                </h6>
-                <div class="position__timeframe">
-                  Desember 2020 - Desember 2022
-                </div>
-              </div>
-
-              <p>
-                Companies that have a strong hold in the field of Artificial
-                Intelligence, are able to carry out various analyzes by
-                utilizing the most updated technology to perform all digital
-                activities instantly.
-              </p>
-            </div>
-          </div>
-          <!-- end column -->
-          <div class="column" data-aos="fade-up">
-            <div class="position">
-              <div class="position__header">
-                <h6>
-                  <span class="position__co">Fiver</span>
-                  <span class="position__pos">Freelancer Front end Web</span>
-                </h6>
-                <div class="position__timeframe">June 2019 - Desember 2020</div>
-              </div>
-              <p>freelancer with nickname sniren</p>
-            </div>
-          </div>
-          <!-- end column -->
-          <div class="column" data-aos="fade-up">
-            <div class="position">
-              <div class="position__header">
-                <h6>
-                  <span class="position__co">Faswork</span>
-                  <span class="position__pos">Freelancer Front end Web</span>
-                </h6>
-                <div class="position__timeframe">June 2019 - Desember 2020</div>
-              </div>
-
-              <p>freelancer with nickname sniren</p>
-            </div>
-          </div>
-          <!-- end column -->
-          <div class="column" data-aos="fade-up">
-            <div class="position">
-              <div class="position__header">
-                <h6>
-                  <span class="position__co">Mirai Dev</span>
-                  <span class="position__pos">Back end Developer</span>
-                </h6>
-                <div class="position__timeframe">June 2016 - Desember 2020</div>
-              </div>
-
-              <p>an association I created to solve problems from school.</p>
-            </div>
-          </div>
-          <!-- end column -->
-        </div>
-        <!-- work positions -->
-      </div>
-      <!-- end s-about__section -->
-    </section>
-    <!-- end s-about -->
-
-    <!-- portfolio
-    ================================================== -->
-    <section id="portfolio" class="s-portfolio target-section">
-      <div class="row s-portfolio__header">
-        <div class="column large-6 medium-8 tab-full">
-          <div class="section-intro" data-num="02" data-aos="fade-up">
-            <h3 class="subhead">Portfolio</h3>
-            <h1 class="display-1">
-              A selection of recent projects I have worked on.
-            </h1>
-          </div>
-        </div>
-      </div>
-      <!-- s-porfolio__header -->
-
-      <div class="row s-porfolio__list block-large-1-2 block-tab-full collapse">
-        <div class="column" data-aos="fade-up">
-          <div class="folio-item">
-            <div class="folio-item__thumb">
-              <a
-                class="folio-item__thumb-link"
-                href="images/portfolio/miraima.png"
-                title="Miraima"
-                data-size="1050x700"
-              >
-                <img
-                  src="images/portfolio/miraima.png"
-                  srcset="
-                    images/portfolio/miraima.png 1x,
-                    images/portfolio/miraima.png 2x
-                  "
-                  alt="Miraima"
-                />
-              </a>
-            </div>
-            <div class="folio-item__info">
-              <div class="folio-item__cat">MiraiDev</div>
-              <h4 class="folio-item__title">Miraima</h4>
-            </div>
-            <a
-              href="https://github.com/sniren210/miraima"
-              title="Project Link"
-              class="folio-item__project-link"
-              >Project Link</a
-            >
-            <div class="folio-item__caption">
-              <p>
-                Wall magazines, or what is commonly abbreviated as madding, are
-                now very rarely paid attention to, in fact not many people even
-                approach the wall magazine even to have a quick look. In fact,
-                wall magazines are a place to send our work to schools.
-              </p>
-              <p>
-                Well, Miraima is here now. Wall magazines, which were originally
-                offline aliases, had a form, now they are on your cellphone and
-                PC. Miraima, an online magazine, allows all works that were
-                originally posted on the bulletin board, now it only takes one
-                click to upload. Save paper and costs and certainly more
-                efficient. Any works that wish to be exhibited can immediately
-                be exhibited at Miraima
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- end column -->
-        <div class="column" data-aos="fade-up">
-          <div class="folio-item">
-            <div class="folio-item__thumb">
-              <a
-                class="folio-item__thumb-link"
-                href="images/portfolio/peran.PNG"
-                title="peran"
-                data-size="1050x700"
-              >
-                <img
-                  src="images/portfolio/peran.PNG"
-                  srcset="
+      <!-- end column -->
+      <div class="column" data-aos="fade-up">
+        <div class="folio-item">
+          <div class="folio-item__thumb">
+            <a class="folio-item__thumb-link" href="images/portfolio/peran.PNG" title="peran" data-size="1050x700">
+              <img src="images/portfolio/peran.PNG" srcset="
                     images/portfolio/peran.PNG 1x,
                     images/portfolio/peran.PNG 2x
-                  "
-                  alt="peran"
-                />
-              </a>
-            </div>
-            <div class="folio-item__info">
-              <div class="folio-item__cat">MiraiDev</div>
-              <h4 class="folio-item__title">Peran</h4>
-            </div>
-            <a
-              href="https://github.com/sniren210/peran"
-              title="Project Link"
-              class="folio-item__project-link"
-              >Project Link</a
-            >
-            <div class="folio-item__caption">
-              <p>
-                Submissions and Suggestions (PERAN) is a social and humanitarian
-                application website. On this website, users can submit problems
-                related to the economy, poverty, fires and other disasters to be
-                forwarded to the government. In addition to submitting, users
-                can also submit suggestions and aspirations to the government
-              </p>
-            </div>
+                  " alt="peran" />
+            </a>
+          </div>
+          <div class="folio-item__info">
+            <div class="folio-item__cat">MiraiDev</div>
+            <h4 class="folio-item__title">Peran</h4>
+          </div>
+          <a href="https://github.com/sniren210/peran" title="Project Link" class="folio-item__project-link">Project
+            Link</a>
+          <div class="folio-item__caption">
+            <p>
+              Submissions and Suggestions (PERAN) is a social and humanitarian
+              application website. On this website, users can submit problems
+              related to the economy, poverty, fires and other disasters to be
+              forwarded to the government. In addition to submitting, users
+              can also submit suggestions and aspirations to the government
+            </p>
           </div>
         </div>
-        <!-- end column -->
-        <div class="column" data-aos="fade-up">
-          <div class="folio-item">
-            <div class="folio-item__thumb">
-              <a
-                class="folio-item__thumb-link"
-                href="images/portfolio/pustaka.png"
-                title="pustaka"
-                data-size="1050x700"
-              >
-                <img
-                  src="images/portfolio/pustaka.png"
-                  srcset="
+      </div>
+      <!-- end column -->
+      <div class="column" data-aos="fade-up">
+        <div class="folio-item">
+          <div class="folio-item__thumb">
+            <a class="folio-item__thumb-link" href="images/portfolio/pustaka.png" title="pustaka" data-size="1050x700">
+              <img src="images/portfolio/pustaka.png" srcset="
                     images/portfolio/pustaka.png 1x,
                     images/portfolio/pustaka.png 2x
-                  "
-                  alt="pustaka"
-                />
-              </a>
-            </div>
-            <div class="folio-item__info">
-              <div class="folio-item__cat">MiraiDev</div>
-              <h4 class="folio-item__title">Pustaka</h4>
-            </div>
-            <a
-              href="https://github.com/sniren210/pustaka"
-              title="Project Link"
-              class="folio-item__project-link"
-              >Project Link</a
-            >
-            <div class="folio-item__caption">
-              <p>
-                Pustaka is a book lending website where the borrower or user
-                only needs to process the loan through the application without
-                having to queue at the library. In fact, the borrower only needs
-                to immediately take the book he has borrowed from the library.
-                All the loan processes from start to finish are carried out by
-                the application. The application will also record fines that
-                must be given if the borrower is not on time
-              </p>
-            </div>
+                  " alt="pustaka" />
+            </a>
+          </div>
+          <div class="folio-item__info">
+            <div class="folio-item__cat">MiraiDev</div>
+            <h4 class="folio-item__title">Pustaka</h4>
+          </div>
+          <a href="https://github.com/sniren210/pustaka" title="Project Link" class="folio-item__project-link">Project
+            Link</a>
+          <div class="folio-item__caption">
+            <p>
+              Pustaka is a book lending website where the borrower or user
+              only needs to process the loan through the application without
+              having to queue at the library. In fact, the borrower only needs
+              to immediately take the book he has borrowed from the library.
+              All the loan processes from start to finish are carried out by
+              the application. The application will also record fines that
+              must be given if the borrower is not on time
+            </p>
           </div>
         </div>
-        <!-- end column -->
-        <div class="column" data-aos="fade-up">
-          <div class="folio-item">
-            <div class="folio-item__thumb">
-              <a
-                class="folio-item__thumb-link"
-                href="images/portfolio/zenbook.jpg"
-                title="zenbook"
-                data-size="1050x700"
-              >
-                <img
-                  src="images/portfolio/zenbook.jpg"
-                  srcset="
+      </div>
+      <!-- end column -->
+      <div class="column" data-aos="fade-up">
+        <div class="folio-item">
+          <div class="folio-item__thumb">
+            <a class="folio-item__thumb-link" href="images/portfolio/zenbook.jpg" title="zenbook" data-size="1050x700">
+              <img src="images/portfolio/zenbook.jpg" srcset="
                     images/portfolio/zenbook.jpg 1x,
                     images/portfolio/zenbook.jpg 2x
-                  "
-                  alt="zenbook"
-                />
-              </a>
-            </div>
-            <div class="folio-item__info">
-              <div class="folio-item__cat">MiraiDev</div>
-              <h4 class="folio-item__title">Zenbook</h4>
-            </div>
-            <a
-              href="https://github.com/sniren210/zenbook"
-              title="Project Link"
-              class="folio-item__project-link"
-              >Project Link</a
-            >
-            <div class="folio-item__caption">
-              <p>
-                Zenbook is an online masterbook that allows users to easily
-                store, edit and view data. In general, the school's main book is
-                usually in the BK room with thick books crammed. Now with
-                Zenbook, data can be safely stored in the database and produce
-                accurate data efficiently.
-              </p>
-            </div>
+                  " alt="zenbook" />
+            </a>
+          </div>
+          <div class="folio-item__info">
+            <div class="folio-item__cat">MiraiDev</div>
+            <h4 class="folio-item__title">Zenbook</h4>
+          </div>
+          <a href="https://github.com/sniren210/zenbook" title="Project Link" class="folio-item__project-link">Project
+            Link</a>
+          <div class="folio-item__caption">
+            <p>
+              Zenbook is an online masterbook that allows users to easily
+              store, edit and view data. In general, the school's main book is
+              usually in the BK room with thick books crammed. Now with
+              Zenbook, data can be safely stored in the database and produce
+              accurate data efficiently.
+            </p>
           </div>
         </div>
-        <!-- end column -->
-        <div class="column" data-aos="fade-up">
-          <div class="folio-item">
-            <div class="folio-item__thumb">
-              <a
-                class="folio-item__thumb-link"
-                href="images/portfolio/shaum.png"
-                title="shaum"
-                data-size="1050x700"
-              >
-                <img
-                  src="images/portfolio/shaum.png"
-                  srcset="
+      </div>
+      <!-- end column -->
+      <div class="column" data-aos="fade-up">
+        <div class="folio-item">
+          <div class="folio-item__thumb">
+            <a class="folio-item__thumb-link" href="images/portfolio/shaum.png" title="shaum" data-size="1050x700">
+              <img src="images/portfolio/shaum.png" srcset="
                     images/portfolio/shaum.png 1x,
                     images/portfolio/shaum.png 2x
-                  "
-                  alt="shaum"
-                />
-              </a>
-            </div>
-            <div class="folio-item__info">
-              <div class="folio-item__cat">MiraiDev</div>
-              <h4 class="folio-item__title">Shaum</h4>
-            </div>
-            <a
-              href="https://github.com/sniren210/buku-ramadhan"
-              title="Project Link"
-              class="folio-item__project-link"
-              >Project Link</a
-            >
-            <div class="folio-item__caption">
-              <p>
-                The month of Ramadan for students is synonymous with the Ramadan
-                journal which contains any activities carried out during the
-                month of Ramadan. Usually the journal is in the form of a thin
-                book which is distributed by the school and collected when
-                Ramadhan is over. And usually students are always lazy to fill
-                in the journal, not to mention if the journal is damaged, dirty,
-                torn or even lost
-              </p>
-              <p>
-                Mirai Developer created an application called Shaum where all
-                our activities will be carried out via Android or PC. We only
-                need to log in with the account that has been determined and
-                fill in the journal periodically. The stored data is more
-                accurate and will not be lost. We also save on expenses for
-                making books and only need to use the internet to access them.
-              </p>
-            </div>
+                  " alt="shaum" />
+            </a>
+          </div>
+          <div class="folio-item__info">
+            <div class="folio-item__cat">MiraiDev</div>
+            <h4 class="folio-item__title">Shaum</h4>
+          </div>
+          <a href="https://github.com/sniren210/buku-ramadhan" title="Project Link"
+            class="folio-item__project-link">Project Link</a>
+          <div class="folio-item__caption">
+            <p>
+              The month of Ramadan for students is synonymous with the Ramadan
+              journal which contains any activities carried out during the
+              month of Ramadan. Usually the journal is in the form of a thin
+              book which is distributed by the school and collected when
+              Ramadhan is over. And usually students are always lazy to fill
+              in the journal, not to mention if the journal is damaged, dirty,
+              torn or even lost
+            </p>
+            <p>
+              Mirai Developer created an application called Shaum where all
+              our activities will be carried out via Android or PC. We only
+              need to log in with the account that has been determined and
+              fill in the journal periodically. The stored data is more
+              accurate and will not be lost. We also save on expenses for
+              making books and only need to use the internet to access them.
+            </p>
           </div>
         </div>
-        <!-- end column -->
-        <div class="column" data-aos="fade-up">
-          <div class="folio-item">
-            <div class="folio-item__thumb">
-              <a
-                class="folio-item__thumb-link"
-                href="images/portfolio/raigame.png"
-                title="raigame"
-                data-size="1050x700"
-              >
-                <img
-                  src="images/portfolio/raigame.png"
-                  srcset="
+      </div>
+      <!-- end column -->
+      <div class="column" data-aos="fade-up">
+        <div class="folio-item">
+          <div class="folio-item__thumb">
+            <a class="folio-item__thumb-link" href="images/portfolio/raigame.png" title="raigame" data-size="1050x700">
+              <img src="images/portfolio/raigame.png" srcset="
                     images/portfolio/raigame.png 1x,
                     images/portfolio/raigame.png 2x
-                  "
-                  alt="raigame"
-                />
-              </a>
-            </div>
-            <div class="folio-item__info">
-              <div class="folio-item__cat">MiraiDev</div>
-              <h4 class="folio-item__title">Raigame</h4>
-            </div>
-            <div class="folio-item__caption">
-              <p>
-                Raigame is a game website where users can play game even ships
-                its own game. Game on Raigame made by the original developer.
-                Where aligned with its name, Raigame means future game (Taken
-                from Japanese, 来 [read: rai] which means "something that will
-                come"). The background of this site is made for accommodate the
-                talents of the nation's children who will become one future
-                successful developers. Some games among others created in
-                connection with the current conditions, namely the pandemic
-                Covid19. Raigame also combines knowledge and the pleasure of
-                playing the game itself.
-              </p>
-            </div>
+                  " alt="raigame" />
+            </a>
+          </div>
+          <div class="folio-item__info">
+            <div class="folio-item__cat">MiraiDev</div>
+            <h4 class="folio-item__title">Raigame</h4>
+          </div>
+          <div class="folio-item__caption">
+            <p>
+              Raigame is a game website where users can play game even ships
+              its own game. Game on Raigame made by the original developer.
+              Where aligned with its name, Raigame means future game (Taken
+              from Japanese, 来 [read: rai] which means "something that will
+              come"). The background of this site is made for accommodate the
+              talents of the nation's children who will become one future
+              successful developers. Some games among others created in
+              connection with the current conditions, namely the pandemic
+              Covid19. Raigame also combines knowledge and the pleasure of
+              playing the game itself.
+            </p>
           </div>
         </div>
-        <!-- end column -->
       </div>
-      <!-- folio-list -->
-    </section>
-    <!-- end portfolio -->
+      <!-- end column -->
+    </div>
+    <!-- folio-list -->
+  </section>
+  <!-- end portfolio -->
 
-    <!-- footer
+  <!-- footer
     ================================================== -->
-    <footer class="s-footer h-dark-bg">
-      <div class="right-vert-line"></div>
+  <footer class="s-footer h-dark-bg">
+    <div class="right-vert-line"></div>
 
-      <div class="row s-footer__main">
-        <div class="column large-6">
-          <div class="section-intro" data-aos="fade-up">
-            <h3 class="subhead">Get In Touch</h3>
+    <div class="row s-footer__main">
+      <div class="column large-6">
+        <div class="section-intro" data-aos="fade-up">
+          <h3 class="subhead">Get In Touch</h3>
 
-            <h1 class="display-1">
-              Have an idea or a concept that really excite you? Let's turn that
-              idea into reality. Shoot me a message.
-            </h1>
-          </div>
-
-          <div class="footer-email-us">
-            <a
-              href="mailto:sniren2002@gmail.com"
-              class="btn btn--primary h-full-width"
-              >Let's Talk</a
-            >
-          </div>
+          <h1 class="display-1">
+            Have an idea or a concept that really excite you? Let's turn that
+            idea into reality. Shoot me a message.
+          </h1>
         </div>
 
-        <div class="column large-5">
-          <div class="footer-contacts">
-            <div class="footer-contact-block" data-aos="fade-up">
-              <h5 class="footer-contact-block__header">Email</h5>
-              <p class="footer-contact-block__content">
-                <a href="mailto:sniren2002@gmail.com">sniren2002@gmail.com</a>
-              </p>
-            </div>
-            <!-- end footer-contact-block -->
-            <div class="footer-contact-block" data-aos="fade-up">
-              <h5 class="footer-contact-block__header">Phone</h5>
-              <p class="footer-contact-block__content">
-                <a href="tel:0852-1513-7048">0852-1513-7048</a>
-              </p>
-            </div>
-            <!-- end footer-contact-block -->
-            <br />
-            <div class="footer-contact-block" data-aos="fade-up">
-              <h5 class="footer-contact-block__header">Social</h5>
-              <ul class="footer-contact-block__list">
-                <li>
-                  <a href="https://www.instagram.com/r3ndks/">Instagram</a>
-                </li>
-                <li><a href="https://github.com/sniren210">Github</a></li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/rendi-dwi-kurniasandi-9442571b6/"
-                    >LinkedIn</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <!-- end footer-contact-block -->
-          </div>
+        <div class="footer-email-us">
+          <a href="mailto:sniren2002@gmail.com" class="btn btn--primary h-full-width">Let's Talk</a>
         </div>
       </div>
-      <!-- end s-footer__main -->
 
-      <div class="row s-footer__bottom">
-        <div class="column large-full ss-copyright">
-          <span>© Copyright Rendi 2022</span>
-          <span
-            >Design by
-            <a href="https://www.styleshout.com/">StyleShout</a></span
-          >
-        </div>
-        <!-- end ss-copyright -->
-
-        <div class="ss-go-top">
-          <a class="smoothscroll" title="Back to Top" href="#top">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 0l8 9h-6v15h-4v-15h-6z" />
-            </svg>
-          </a>
-        </div>
-        <!-- end ss-go-top -->
-      </div>
-      <!-- end s-footer__bottom -->
-    </footer>
-    <!-- end s-footer -->
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-      <div class="pswp__bg"></div>
-      <div class="pswp__scroll-wrap">
-        <div class="pswp__container">
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-        </div>
-
-        <div class="pswp__ui pswp__ui--hidden">
-          <div class="pswp__top-bar">
-            <div class="pswp__counter"></div>
-            <button
-              class="pswp__button pswp__button--close"
-              title="Close (Esc)"
-            ></button>
-            <button
-              class="pswp__button pswp__button--share"
-              title="Share"
-            ></button>
-            <button
-              class="pswp__button pswp__button--fs"
-              title="Toggle fullscreen"
-            ></button>
-            <button
-              class="pswp__button pswp__button--zoom"
-              title="Zoom in/out"
-            ></button>
-            <div class="pswp__preloader">
-              <div class="pswp__preloader__icn">
-                <div class="pswp__preloader__cut">
-                  <div class="pswp__preloader__donut"></div>
-                </div>
-              </div>
-            </div>
+      <div class="column large-5">
+        <div class="footer-contacts">
+          <div class="footer-contact-block" data-aos="fade-up">
+            <h5 class="footer-contact-block__header">Email</h5>
+            <p class="footer-contact-block__content">
+              <a href="mailto:sniren2002@gmail.com">sniren2002@gmail.com</a>
+            </p>
           </div>
-          <div
-            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
-          >
-            <div class="pswp__share-tooltip"></div>
+          <!-- end footer-contact-block -->
+          <div class="footer-contact-block" data-aos="fade-up">
+            <h5 class="footer-contact-block__header">Phone</h5>
+            <p class="footer-contact-block__content">
+              <a href="tel:0852-1513-7048">0852-1513-7048</a>
+            </p>
           </div>
-          <button
-            class="pswp__button pswp__button--arrow--left"
-            title="Previous (arrow left)"
-          ></button>
-          <button
-            class="pswp__button pswp__button--arrow--right"
-            title="Next (arrow right)"
-          ></button>
-          <div class="pswp__caption">
-            <div class="pswp__caption__center"></div>
+          <!-- end footer-contact-block -->
+          <br />
+          <div class="footer-contact-block" data-aos="fade-up">
+            <h5 class="footer-contact-block__header">Social</h5>
+            <ul class="footer-contact-block__list">
+              <li>
+                <a href="https://www.instagram.com/r3ndks/">Instagram</a>
+              </li>
+              <li><a href="https://github.com/sniren210">Github</a></li>
+              <li>
+                <a href="https://www.linkedin.com/in/rendi-dwi-kurniasandi-9442571b6/">LinkedIn</a>
+              </li>
+            </ul>
           </div>
+          <!-- end footer-contact-block -->
         </div>
       </div>
     </div>
-    <!-- end photoSwipe background -->
+    <!-- end s-footer__main -->
 
-    <!-- Java Script
+    <div class="row s-footer__bottom">
+      <div class="column large-full ss-copyright">
+        <span>© Copyright Rendi 2022</span>
+        <span>Design by
+          <a href="https://www.styleshout.com/">StyleShout</a></span>
+      </div>
+      <!-- end ss-copyright -->
+
+      <div class="ss-go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 0l8 9h-6v15h-4v-15h-6z" />
+          </svg>
+        </a>
+      </div>
+      <!-- end ss-go-top -->
+    </div>
+    <!-- end s-footer__bottom -->
+  </footer>
+  <!-- end s-footer -->
+
+  <!-- photoswipe background
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div>
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end photoSwipe background -->
+
+  <!-- Java Script
+    ================================================== -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
