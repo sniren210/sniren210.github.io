@@ -29,7 +29,11 @@
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-        <div class="hamburger">
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fas fa-sun" id="themeIcon"></i>
+          </button>
+          <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -53,7 +57,7 @@
           </p>
           <div class="hero-buttons">
             <a href="#contact" class="btn btn-primary">Get In Touch</a>
-            <a href="#projects" class="btn btn-secondary">View My Work</a>
+            <a href="#projects" class="btn btn-secondary" style="color: white;">View My Work</a>
           </div>
         </div>
         <div class="hero-visual">
@@ -459,11 +463,24 @@
           <p class="section-subtitle">Some of my recent work</p>
         </div>
         <div class="projects-grid">
-          <div class="project-card animate-on-scroll">
+          <div class="project-card animate-on-scroll" 
+               data-project="littlewallet"
+               data-title="Little Wallet"
+               data-category="Mobile App"
+               data-status="Published"
+               data-description="A comprehensive family financial education app designed to teach financial literacy across generations. Features multi-role login system for Parents, Teens, and Elders with real-time push notifications, GPS tracking, and multilingual support covering English, Indonesian, and Vietnamese markets."
+               data-features="Multi-role authentication system,Real-time push notifications,GPS location tracking,Multilingual support (EN/ID/VN),Family financial management,Educational content delivery,Cross-platform compatibility,Secure payment integration"
+               data-tech="Flutter,Firebase,Riverpod,Lottie,Push Notifications,GPS Integration"
+               data-github="https://github.com/sniren210"
+               data-live="#"
+               data-image="./images/littlewallet.png">
             <div class="project-image">
               <img src="./images/littlewallet.png" alt="Little Wallet App" />
               <div class="project-overlay">
                 <div class="project-links">
+                  <!-- <button class="project-link view-details" title="View Details">
+                    <i class="fas fa-eye"></i>
+                  </button> -->
                   <a
                     href="https://github.com/sniren210"
                     target="_blank"
@@ -490,11 +507,24 @@
               </div>
             </div>
           </div>
-          <div class="project-card animate-on-scroll">
+          <div class="project-card animate-on-scroll"
+               data-project="tanahub"
+               data-title="Tanahub"
+               data-category="Web3 Platform"
+               data-status="In Production"
+               data-description="A revolutionary blockchain-based property listing platform that combines real estate with Web3 technology. Features smart contract integration, wallet connectivity, and responsive design for both mobile and web platforms. Built for modern property investment and management."
+               data-features="Smart contract integration,Wallet connectivity (MetaMask, WalletConnect),Property NFT minting,Responsive web and mobile design,Firebase real-time messaging,Property listing and discovery,Blockchain transaction history,Multi-platform compatibility"
+               data-tech="Flutter,Next.js,Ethers.js,Solidity,Web3,Firebase,Smart Contracts"
+               data-github="https://github.com/sniren210"
+               data-live="#"
+               data-image="./images/tanahub.png">
             <div class="project-image">
               <img src="./images/tanahub.png" alt="Tanahub Web3 Platform" />
               <div class="project-overlay">
                 <div class="project-links">
+                  <!-- <button class="project-link view-details" title="View Details">
+                    <i class="fas fa-eye"></i>
+                  </button> -->
                   <a
                     href="https://github.com/sniren210"
                     target="_blank"
@@ -520,11 +550,24 @@
               </div>
             </div>
           </div>
-          <div class="project-card animate-on-scroll">
+          <div class="project-card animate-on-scroll"
+               data-project="hararu"
+               data-title="Hararu"
+               data-category="E-commerce Platform"
+               data-status="Completed"
+               data-description="A comprehensive halal product marketplace featuring location-based store discovery, real-time chat system, and dynamic deep linking. Built with Flutter Web for responsive design and integrated with Laravel backend APIs for robust performance."
+               data-features="Location-based store discovery,Real-time chat via WebSocket,Dynamic deep links,Google Maps integration,NFT product listing,Responsive web design,Laravel API integration,Wallet system integration"
+               data-tech="Flutter,Laravel,GetX,WebSocket,Google Maps,NFT Integration"
+               data-github="https://github.com/sniren210"
+               data-live="#"
+               data-image="./images/hararu.png">
             <div class="project-image">
               <img src="./images/hararu.png" alt="Hararu Marketplace" />
               <div class="project-overlay">
                 <div class="project-links">
+                  <!-- <button class="project-link view-details" title="View Details">
+                    <i class="fas fa-eye"></i>
+                  </button> -->
                   <a
                     href="https://github.com/sniren210"
                     target="_blank"
@@ -550,11 +593,18 @@
               </div>
             </div>
           </div>
-          <div class="project-card animate-on-scroll">
+          <div class="project-card animate-on-scroll"
+               data-project="harti"
+               data-title="Harti"
+               data-category="NFT Platform"
+               data-status="Completed">
             <div class="project-image">
               <img src="./images/harti.png" alt="Harti NFT App" />
               <div class="project-overlay">
                 <div class="project-links">
+                  <!-- <button class="project-link view-details" title="View Details">
+                    <i class="fas fa-eye"></i>
+                  </button> -->
                   <a
                     href="https://github.com/sniren210"
                     target="_blank"
@@ -579,11 +629,15 @@
               </div>
             </div>
           </div>
-          <div class="project-card animate-on-scroll">
+          <div class="project-card animate-on-scroll"
+               data-project="instantad">
             <div class="project-image">
               <img src="./images/instandad.png" alt="InstantAd.ai" />
               <div class="project-overlay">
                 <div class="project-links">
+                  <!-- <button class="project-link view-details" title="View Details">
+                    <i class="fas fa-eye"></i>
+                  </button> -->
                   <a
                     href="https://github.com/sniren210"
                     target="_blank"
@@ -610,14 +664,18 @@
               </div>
             </div>
           </div>
-          <div class="project-card animate-on-scroll">
+          <div class="project-card animate-on-scroll"
+               data-project="gatsby">
             <div class="project-image">
               <img
-                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop"
+                src="./images/gatsby.png"
                 alt="Gatsby.co.id Refactor"
               />
               <div class="project-overlay">
                 <div class="project-links">
+                  <!-- <button class="project-link view-details" title="View Details">
+                    <i class="fas fa-eye"></i>
+                  </button> -->
                   <a
                     href="https://github.com/sniren210"
                     target="_blank"
@@ -646,105 +704,153 @@
       </div>
     </section>
 
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+      <div class="modal-overlay" id="modalOverlay"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="modalTitle">Project Title</h2>
+          <button class="modal-close" id="modalClose" title="Close modal">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-image">
+            <img id="modalImage" src="" alt="Project Image" />
+          </div>
+          <div class="modal-details">
+            <div class="modal-meta">
+              <span class="modal-category" id="modalCategory">Category</span>
+              <span class="modal-status" id="modalStatus">Status</span>
+            </div>
+            <p id="modalDescription">Project description will appear here...</p>
+            <div class="modal-features">
+              <h4>Key Features:</h4>
+              <ul id="modalFeatures">
+                <!-- Features will be populated dynamically -->
+              </ul>
+            </div>
+            <div class="modal-tech">
+              <h4>Technologies Used:</h4>
+              <div id="modalTechStack" class="tech-stack">
+                <!-- Tech stack will be populated dynamically -->
+              </div>
+            </div>
+            <div class="modal-links">
+              <a id="modalGithubLink" href="#" target="_blank" class="modal-link github-link">
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a id="modalLiveLink" href="#" target="_blank" class="modal-link live-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
         <div class="section-header animate-on-scroll">
           <h2 class="section-title">Get In Touch</h2>
-          <p class="section-subtitle">Let's work together</p>
+          <p class="section-subtitle">Have an idea or a concept that really excite you?<br>Let's turn that idea into reality. Shoot me a message.</p>
         </div>
         <div class="contact-content">
-          <div class="contact-info animate-on-scroll">
-            <div class="contact-item">
+          <div class="contact-cards">
+            <div class="contact-card animate-on-scroll">
               <div class="contact-icon">
                 <i class="fas fa-envelope"></i>
               </div>
               <div class="contact-details">
                 <h4>Email</h4>
                 <p>rendidwi.softwaredev@gmail.com</p>
+                <a href="mailto:rendidwi.softwaredev@gmail.com?subject=Project%20Inquiry" class="contact-link">
+                  Send Email <i class="fas fa-arrow-right"></i>
+                </a>
               </div>
             </div>
-            <div class="contact-item">
+            
+            <div class="contact-card animate-on-scroll">
               <div class="contact-icon">
                 <i class="fas fa-phone"></i>
               </div>
               <div class="contact-details">
                 <h4>Phone</h4>
                 <p>+62 852 1513 7048</p>
+                <a href="tel:+6285215137048" class="contact-link">
+                  Call Now <i class="fas fa-arrow-right"></i>
+                </a>
               </div>
             </div>
-            <div class="contact-item">
+            
+            <div class="contact-card animate-on-scroll">
+              <div class="contact-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="contact-details">
+                <h4>WhatsApp</h4>
+                <p>Quick Response</p>
+                <a href="https://wa.me/6285215137048?text=Hi%20Rendi,%20I'm%20interested%20in%20discussing%20a%20project" target="_blank" class="contact-link">
+                  Message <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            
+            <!-- <div class="contact-card animate-on-scroll">
               <div class="contact-icon">
                 <i class="fas fa-map-marker-alt"></i>
               </div>
               <div class="contact-details">
                 <h4>Location</h4>
                 <p>Bandung, Indonesia</p>
+                <span class="contact-note">Available for Remote Work</span>
               </div>
+            </div> -->
+          </div>
+          
+          <div class="contact-cta animate-on-scroll">
+            <h3>Ready to Start Your Project?</h3>
+            <p>Let's discuss how I can help bring your ideas to life</p>
+            <div class="cta-buttons">
+              <a href="mailto:rendidwi.softwaredev@gmail.com?subject=Project%20Proposal&body=Hi%20Rendi,%0A%0AI'm%20interested%20in%20discussing%20a%20project%20with%20you.%0A%0AProject%20Details:%0A-%20Type:%20%0A-%20Timeline:%20%0A-%20Budget:%20%0A%0APlease%20let%20me%20know%20when%20you're%20available%20for%20a%20call.%0A%0ABest%20regards" class="btn btn-primary">
+                <i class="fas fa-envelope"></i> Start a Project
+              </a>
+              <a href="https://wa.me/6285215137048?text=Hi%20Rendi,%20I'd%20like%20to%20schedule%20a%20consultation" target="_blank" class="btn btn-secondary">
+                <i class="fab fa-whatsapp"></i> Quick Chat
+              </a>
             </div>
+          </div>
+          
+          <div class="social-section animate-on-scroll">
+            <h4>Connect With Me</h4>
             <div class="social-links">
               <a
                 href="https://www.linkedin.com/in/rendi-dwi-kurniasandi-9442571b6/"
                 target="_blank"
-                class="social-link"
+                class="social-link linkedin"
                 title="LinkedIn Profile"
-                ><i class="fab fa-linkedin"></i
-              ></a>
+                ><i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
               <a
                 href="https://github.com/sniren210"
                 target="_blank"
-                class="social-link"
+                class="social-link github"
                 title="GitHub Profile"
-                ><i class="fab fa-github"></i
-              ></a>
+                ><i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
               <a
-                href="https://wa.me//6285215137048"
+                href="https://wa.me/6285215137048"
                 target="_blank"
-                class="social-link"
-                title="Twitter Profile"
-                ><i class="fab fa-whatsapp"></i
-              ></a>
+                class="social-link whatsapp"
+                title="WhatsApp"
+                ><i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
             </div>
           </div>
-          <form class="contact-form animate-on-scroll">
-            <div class="form-group">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Subject"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Your Message"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn">Send Message</button>
-          </form>
         </div>
       </div>
     </section>

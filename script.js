@@ -4,6 +4,42 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 
+// Theme Toggle Functionality
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+
+// Check for saved theme preference or default to 'light'
+const currentTheme = localStorage.getItem('theme') || 'dark';
+document.documentElement.setAttribute('data-theme', currentTheme);
+
+// Update icon based on current theme
+function updateThemeIcon(theme) {
+    if (theme === 'dark') {
+        themeIcon.className = 'fas fa-moon';
+    } else {
+        themeIcon.className = 'fas fa-sun';
+    }
+}
+
+// Initialize theme icon
+updateThemeIcon(currentTheme);
+
+// Theme toggle event listener
+themeToggle.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme);
+    
+    // Add smooth transition effect
+    document.body.style.transition = 'background-color 0.3s ease, color 0.3s ease';
+    setTimeout(() => {
+        document.body.style.transition = '';
+    }, 300);
+});
+
 // Navigation functionality
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -467,4 +503,224 @@ Connect with me:
 // Initialize all components
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Portfolio website loaded successfully! 🎉');
+});
+
+// Project Modal Functionality
+const projectModal = document.getElementById('projectModal');
+const modalOverlay = document.getElementById('modalOverlay');
+const modalClose = document.getElementById('modalClose');
+const modalTitle = document.getElementById('modalTitle');
+const modalImage = document.getElementById('modalImage');
+const modalCategory = document.getElementById('modalCategory');
+const modalStatus = document.getElementById('modalStatus');
+const modalDescription = document.getElementById('modalDescription');
+const modalFeatures = document.getElementById('modalFeatures');
+const modalTechStack = document.getElementById('modalTechStack');
+const modalGithubLink = document.getElementById('modalGithubLink');
+const modalLiveLink = document.getElementById('modalLiveLink');
+
+// Project data
+const projectsData = {
+    littlewallet: {
+        title: "Little Wallet",
+        category: "Mobile App",
+        status: "Published",
+        description: "A comprehensive family financial education app designed to teach financial literacy across generations. Features multi-role login system for Parents, Teens, and Elders with real-time push notifications, GPS tracking, and multilingual support covering English, Indonesian, and Vietnamese markets.",
+        features: [
+            "Multi-role authentication system",
+            "Real-time push notifications", 
+            "GPS location tracking",
+            "Multilingual support (EN/ID/VN)",
+            "Family financial management",
+            "Educational content delivery",
+            "Cross-platform compatibility",
+            "Secure payment integration"
+        ],
+        tech: ["Flutter", "Firebase", "Riverpod", "Lottie", "Push Notifications", "GPS Integration"],
+        github: "https://github.com/sniren210",
+        live: "#",
+        image: "./images/littlewallet.png"
+    },
+    tanahub: {
+        title: "Tanahub",
+        category: "Web3 Platform", 
+        status: "In Production",
+        description: "A revolutionary blockchain-based property listing platform that combines real estate with Web3 technology. Features smart contract integration, wallet connectivity, and responsive design for both mobile and web platforms. Built for modern property investment and management.",
+        features: [
+            "Smart contract integration",
+            "Wallet connectivity (MetaMask, WalletConnect)",
+            "Property NFT minting",
+            "Responsive web and mobile design",
+            "Firebase real-time messaging",
+            "Property listing and discovery",
+            "Blockchain transaction history",
+            "Multi-platform compatibility"
+        ],
+        tech: ["Flutter", "Next.js", "Ethers.js", "Solidity", "Web3", "Firebase", "Smart Contracts"],
+        github: "https://github.com/sniren210",
+        live: "#",
+        image: "./images/tanahub.png"
+    },
+    hararu: {
+        title: "Hararu",
+        category: "E-commerce Platform",
+        status: "Completed", 
+        description: "A comprehensive halal product marketplace featuring location-based store discovery, real-time chat system, and dynamic deep linking. Built with Flutter Web for responsive design and integrated with Laravel backend APIs for robust performance.",
+        features: [
+            "Location-based store discovery",
+            "Real-time chat via WebSocket",
+            "Dynamic deep links",
+            "Google Maps integration",
+            "NFT product listing",
+            "Responsive web design",
+            "Laravel API integration",
+            "Wallet system integration"
+        ],
+        tech: ["Flutter", "Laravel", "GetX", "WebSocket", "Google Maps", "NFT Integration"],
+        github: "https://github.com/sniren210",
+        live: "#",
+        image: "./images/hararu.png"
+    },
+    harti: {
+        title: "Harti",
+        category: "NFT Platform",
+        status: "Completed",
+        description: "An innovative NFT campaign application featuring custom roadmap animations, OpenSea integration, and invite-only access control. Built to showcase NFT collections with engaging user experience.",
+        features: [
+            "Custom Lottie animations",
+            "OpenSea integration", 
+            "Invite-only access system",
+            "NFT collection showcase",
+            "Interactive roadmap",
+            "Firebase backend",
+            "Supabase integration",
+            "Mobile-first design"
+        ],
+        tech: ["Flutter", "Firebase", "Supabase", "Lottie", "NFT APIs"],
+        github: "https://github.com/sniren210",
+        live: "#",
+        image: "./images/harti.png"
+    },
+    instantad: {
+        title: "InstantAd.ai",
+        category: "AI Application",
+        status: "Published",
+        description: "A powerful AI-powered advertising assistant designed to help users launch complete, high-quality ad campaigns in seconds. Targeted at business owners, marketers, and content creators. Publicly available on Google Play Store.",
+        features: [
+            "AI-powered campaign generation",
+            "Real-time ad optimization",
+            "Multi-platform publishing",
+            "Analytics dashboard",
+            "Template management",
+            "API integrations",
+            "User role management",
+            "Google Play Store published"
+        ],
+        tech: ["Flutter", "Firebase", "AI SDK/API", "REST API", "Machine Learning"],
+        github: "https://github.com/sniren210",
+        live: "https://play.google.com/store",
+        image: "./images/instandad.png"
+    },
+    gatsby: {
+        title: "Gatsby.co.id (Refactor)",
+        category: "Web Development",
+        status: "Completed",
+        description: "Website optimization and frontend refactor project that reduced load time by 40% and increased interaction metrics by 30%. Focused on performance optimization and modern development practices.",
+        features: [
+            "40% load time reduction",
+            "30% interaction improvement",
+            "Modern build pipeline",
+            "Performance optimization",
+            "SEO improvements",
+            "Responsive design upgrade",
+            "Code splitting implementation",
+            "Progressive enhancement"
+        ],
+        tech: ["SvelteKit", "TailwindCSS", "Vite", "Performance Optimization"],
+        github: "https://github.com/sniren210",
+        live: "#",
+        image: "./images/gatsby.png"
+    }
+};
+
+// Open modal function
+function openProjectModal(projectKey) {
+    const project = projectsData[projectKey];
+    if (!project) return;
+
+    // Populate modal content
+    modalTitle.textContent = project.title;
+    modalImage.src = project.image;
+    modalImage.alt = project.title;
+    modalCategory.textContent = project.category;
+    modalStatus.textContent = project.status;
+    modalDescription.textContent = project.description;
+    
+    // Clear and populate features
+    modalFeatures.innerHTML = '';
+    project.features.forEach(feature => {
+        const li = document.createElement('li');
+        li.textContent = feature;
+        modalFeatures.appendChild(li);
+    });
+    
+    // Clear and populate tech stack
+    modalTechStack.innerHTML = '';
+    project.tech.forEach(tech => {
+        const span = document.createElement('span');
+        span.className = 'tech-tag';
+        span.textContent = tech;
+        modalTechStack.appendChild(span);
+    });
+    
+    // Update links
+    modalGithubLink.href = project.github;
+    modalLiveLink.href = project.live;
+    
+    // Show modal with animation
+    projectModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+// Close modal function
+function closeProjectModal() {
+    projectModal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Event listeners for project cards
+document.addEventListener('DOMContentLoaded', function() {
+    // Add click listeners to view details buttons
+    // document.querySelectorAll('.view-details').forEach(button => {
+    //     button.addEventListener('click', function(e) {
+    //         e.preventDefault();
+    //         e.stopPropagation();
+            
+    //         const projectCard = this.closest('.project-card');
+    //         const projectKey = projectCard.dataset.project;
+    //         openProjectModal(projectKey);
+    //     });
+    // });
+    
+    // Add click listeners to project cards themselves
+    // document.querySelectorAll('.project-card').forEach(card => {
+    //     card.addEventListener('click', function(e) {
+    //         // Don't trigger if clicking on links or buttons
+    //         if (e.target.closest('a') || e.target.closest('button')) return;
+            
+    //         const projectKey = this.dataset.project;
+    //         openProjectModal(projectKey);
+    //     });
+    // });
+    
+    // Close modal events
+    modalClose.addEventListener('click', closeProjectModal);
+    modalOverlay.addEventListener('click', closeProjectModal);
+    
+    // Close modal on ESC key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && projectModal.classList.contains('active')) {
+            closeProjectModal();
+        }
+    });
 });
