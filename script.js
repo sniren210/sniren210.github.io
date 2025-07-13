@@ -1,3 +1,53 @@
+// Loading Screen Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    const progressBar = document.getElementById('progressBar');
+    
+    // Simulate loading progress
+    let progress = 0;
+    const loadingInterval = setInterval(() => {
+        progress += Math.random() * 10;
+        if (progress > 100) progress = 100;
+        
+        progressBar.style.width = progress + '%';
+        
+        if (progress >= 100) {
+            clearInterval(loadingInterval);
+            
+            // Hide loading screen after a short delay
+            setTimeout(() => {
+                loadingScreen.classList.add('fade-out');
+                
+                // Remove loading screen from DOM after animation
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                    
+                    // Trigger scroll animations for elements already in view
+                    const elementsInView = document.querySelectorAll('.animate-on-scroll');
+                    elementsInView.forEach(el => {
+                        const rect = el.getBoundingClientRect();
+                        if (rect.top < window.innerHeight && rect.bottom > 0) {
+                            el.classList.add('animated');
+                        }
+                    });
+                }, 800);
+            }, 500);
+        }
+    }, 100);
+    
+    // Ensure loading screen is hidden even if something goes wrong
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            if (loadingScreen && !loadingScreen.classList.contains('fade-out')) {
+                loadingScreen.classList.add('fade-out');
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 800);
+            }
+        }, 3000); // Maximum 3 seconds loading time
+    });
+});
+
 // DOM Elements
 const navbar = document.getElementById('navbar');
 const hamburger = document.querySelector('.hamburger');
