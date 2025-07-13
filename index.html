@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rendi Dwi Kurniasandi - Fullstack Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-text">RDK</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-text animate-on-scroll">
+          <h1 class="hero-title">
+            <span class="title-line">Hello, I'm</span>
+            <span class="title-name">Rendi Dwi Kurniasandi</span>
+            <span class="title-role">Fullstack Developer</span>
+          </h1>
+          <p class="hero-description">
+            Flutter & Mobile Specialist | React | Firebase | REST API | Web3
+            Enthusiast with over 4 years of hands-on experience in
+            cross-platform development.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="#projects" class="btn btn-secondary">View My Work</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+          </div>
+          <div class="profile-card">
+            <div class="card-inner">
+              <div class="profile-image">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+                  alt="Profile"
+                />
+              </div>
+              <div class="profile-info">
+                <h3>Rendi Dwi Kurniasandi</h3>
+                <p>Flutter & Mobile Specialist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know me better</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text animate-on-scroll">
+            <p class="about-intro">
+              I'm an adaptable and highly driven software engineer with over 4
+              years of hands-on experience in cross-platform mobile and web
+              development. Specialized in Flutter, with strong exposure to
+              real-world apps in fintech, e-commerce, blockchain/Web3, and
+              educational platforms. Proven ability to deliver production-ready
+              applications and work with international clients.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-target="100">100+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="4">4+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="50">50+</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual animate-on-scroll">
+            <div class="code-window">
+              <div class="window-header">
+                <div class="window-controls">
+                  <span class="control close"></span>
+                  <span class="control minimize"></span>
+                  <span class="control maximize"></span>
+                </div>
+                <span class="window-title">about_me.dart</span>
+              </div>
+              <div class="code-content">
+                <pre><code><span class="keyword">class</span> <span class="variable">Developer</span> {
+  <span class="keyword">final</span> <span class="property">String</span> name = <span class="string">"Rendi Dwi Kurniasandi"</span>;
+  <span class="keyword">final</span> <span class="property">String</span> role = <span class="string">"Fullstack Developer"</span>;
+  <span class="keyword">final</span> <span class="property">String</span> location = <span class="string">"Bandung, Indonesia"</span>;
+  <span class="keyword">final</span> <span class="property">List&lt;String&gt;</span> specialties = [
+    <span class="string">"Flutter"</span>,
+    <span class="string">"React"</span>,
+    <span class="string">"Firebase"</span>,
+    <span class="string">"Web3"</span>
+  ];
+  <span class="keyword">final</span> <span class="property">String</span> passion = <span class="string">"Cross-platform excellence"</span>;
+}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">What I work with</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category animate-on-scroll">
+            <div class="category-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Mobile Development</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Flutter</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Dart</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Firebase</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category animate-on-scroll">
+            <div class="category-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">React/Next.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">JavaScript/TypeScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">SvelteKit</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category animate-on-scroll">
+            <div class="category-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3>Backend & Web3</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Node.js/Laravel</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="82%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Solidity/Web3</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="78%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">PostgreSQL</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle">My professional journey</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Feb 2024 - Apr 2025</div>
+              <h3>Software Engineer</h3>
+              <h4>PT. Sundawa Teknologi Indonesia</h4>
+              <p>
+                Developed full-featured real estate Web3 platform (Tanahub)
+                using Flutter (mobile) and Next.js (web). Integrated wallet
+                connect, NFT smart contract interaction, and Firebase for
+                messaging. Refactored and built event platform for UNDP and
+                several internal admin dashboards.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Web3</span>
+                <span class="tag">Solidity</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Feb 2023 - Dec 2023</div>
+              <h3>Mobile App Developer - Flutter</h3>
+              <h4>Little Wallet Pte. Ltd. (Singapore - Remote)</h4>
+              <p>
+                Built mobile financial literacy app for families, with
+                multi-role system (Parent, Teen, Elder). Integrated real-time
+                push notifications, Google Maps/GPS tracking, and multilingual
+                support. Published on Play Store and App Store with CI-ready
+                codebase.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Riverpod</span>
+                <span class="tag">Multi-language</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Dec 2020 - Dec 2022</div>
+              <h3>Flutter Developer</h3>
+              <h4>PT. Xetia Indo</h4>
+              <p>
+                Developed Hararu, a halal marketplace with location-based store
+                discovery, dynamic deep links, and chat system via WebSocket.
+                Delivered Flutter Web version using responsive and adaptive
+                layout. Managed integration with backend Laravel APIs and wallet
+                system.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">WebSocket</span>
+                <span class="tag">GetX</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2020 - Present</div>
+              <h3>Freelancer</h3>
+              <h4>Mobile & Web Developer</h4>
+              <p>
+                Completed 100+ freelance projects on Fiverr, Fastwork, and
+                direct clients. Specialized in Flutter mobile apps, POS systems,
+                NFT platforms, and offline-first applications. Delivered
+                solutions for ferry booking, inventory management, and showcase
+                applications.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Freelance</span>
+                <span class="tag">100+ Projects</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Some of my recent work</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card animate-on-scroll">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop"
+                alt="Little Wallet App"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/sniren210"
+                    target="_blank"
+                    class="project-link"
+                    title="View Code"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Little Wallet</h3>
+              <p>
+                Family financial education app with multi-role login (Parent,
+                Teen, Elder), real-time push notifications, GPS tracking, and
+                multilingual support (EN/ID/VN). Deployed on Play Store & App
+                Store.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Riverpod</span>
+                <span class="tech-tag">Lottie</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card animate-on-scroll">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
+                alt="Tanahub Web3 Platform"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/sniren210"
+                    target="_blank"
+                    class="project-link"
+                    title="View Code"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Tanahub</h3>
+              <p>
+                Blockchain-based property listing platform with smart contract
+                integration, wallet login, and responsive frontend for mobile
+                and web.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Ethers.js</span>
+                <span class="tech-tag">Solidity</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card animate-on-scroll">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
+                alt="Hararu Marketplace"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/sniren210"
+                    target="_blank"
+                    class="project-link"
+                    title="View Code"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Hararu</h3>
+              <p>
+                Halal product marketplace with chat system (WebSocket), dynamic
+                deep links, Google Maps-based discovery, and NFT product
+                listing.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">GetX</span>
+                <span class="tech-tag">WebSocket</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card animate-on-scroll">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=400&fit=crop"
+                alt="Harti NFT App"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/sniren210"
+                    target="_blank"
+                    class="project-link"
+                    title="View Code"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Harti</h3>
+              <p>
+                NFT campaign application with custom roadmap animation (Lottie),
+                OpenSea integration, and invite-only access control.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">Lottie</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card animate-on-scroll">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop"
+                alt="InstantAd.ai"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/sniren210"
+                    target="_blank"
+                    class="project-link"
+                    title="View Code"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>InstantAd.ai</h3>
+              <p>
+                A powerful AI-powered advertising assistant designed to help
+                users launch complete, high-quality ad campaigns in seconds.
+                Targeted at business owners, marketers, and content creators.
+                Publicly available on Google Play Store.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">AI SDK/API</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card animate-on-scroll">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop"
+                alt="Gatsby.co.id Refactor"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/sniren210"
+                    target="_blank"
+                    class="project-link"
+                    title="View Code"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Gatsby.co.id (Refactor)</h3>
+              <p>
+                Website optimization and frontend refactor project that reduced
+                load time by 40% and increased interaction metrics by 30%.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">SvelteKit</span>
+                <span class="tech-tag">TailwindCSS</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">Performance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's work together</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info animate-on-scroll">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>rendidwi.softwaredev@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Phone</h4>
+                <p>+62 852 1513 7048</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Bandung, Indonesia</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/rendi-dwi-kurniasandi-9442571b6/"
+                target="_blank"
+                class="social-link"
+                title="LinkedIn Profile"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/sniren210"
+                target="_blank"
+                class="social-link"
+                title="GitHub Profile"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://wa.me//6285215137048"
+                target="_blank"
+                class="social-link"
+                title="Twitter Profile"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <form class="contact-form animate-on-scroll">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Rendi Dwi Kurniasandi. All rights reserved.</p>
+          <p>
+            Designed and developed with <i class="fas fa-heart"></i> by Rendi
+            Dwi Kurniasandi
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
