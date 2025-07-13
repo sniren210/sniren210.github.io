@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rendi Dwi Kurniasandi - Fullstack Developer</title>
+    <title>Rendi Dwi Kurniasandi - Software Engineer</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
@@ -44,7 +44,7 @@
           <h1 class="hero-title">
             <span class="title-line">Hello, I'm</span>
             <span class="title-name">Rendi Dwi Kurniasandi</span>
-            <span class="title-role">Fullstack Developer</span>
+            <span class="title-role">Software Engineer</span>
           </h1>
           <p class="hero-description">
             Flutter & Mobile Specialist | React | Firebase | REST API | Web3
@@ -66,10 +66,7 @@
           <div class="profile-card">
             <div class="card-inner">
               <div class="profile-image">
-                <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
-                  alt="Profile"
-                />
+                <img src="./images/user.jpeg" alt="Profile" />
               </div>
               <div class="profile-info">
                 <h3>Rendi Dwi Kurniasandi</h3>
@@ -80,7 +77,12 @@
         </div>
       </div>
       <div class="scroll-indicator">
-        <div class="scroll-arrow"></div>
+        <div class="mouse-scroll">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div class="scroll-text">Scroll Down</div>
+        </div>
       </div>
     </section>
 
@@ -129,7 +131,7 @@
               <div class="code-content">
                 <pre><code><span class="keyword">class</span> <span class="variable">Developer</span> {
   <span class="keyword">final</span> <span class="property">String</span> name = <span class="string">"Rendi Dwi Kurniasandi"</span>;
-  <span class="keyword">final</span> <span class="property">String</span> role = <span class="string">"Fullstack Developer"</span>;
+  <span class="keyword">final</span> <span class="property">String</span> role = <span class="string">"Software Engineer"</span>;
   <span class="keyword">final</span> <span class="property">String</span> location = <span class="string">"Bandung, Indonesia"</span>;
   <span class="keyword">final</span> <span class="property">List&lt;String&gt;</span> specialties = [
     <span class="string">"Flutter"</span>,
@@ -161,21 +163,29 @@
             <h3>Mobile Development</h3>
             <div class="skills-list">
               <div class="skill-item">
-                <span class="skill-name">Flutter</span>
+                <span class="skill-name">Flutter/Dart</span>
                 <div class="skill-bar">
                   <div class="skill-progress" data-width="95%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <span class="skill-name">Dart</span>
+                <span class="skill-name">Kotlin (Android)</span>
                 <div class="skill-bar">
-                  <div class="skill-progress" data-width="95%"></div>
+                  <div class="skill-progress" data-width="88%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <span class="skill-name">Firebase</span>
+                <span class="skill-name">Swift (iOS)</span>
                 <div class="skill-bar">
-                  <div class="skill-progress" data-width="90%"></div>
+                  <div class="skill-progress" data-width="75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  >State Management (Bloc, Riverpod)</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="92%"></div>
                 </div>
               </div>
             </div>
@@ -193,15 +203,21 @@
                 </div>
               </div>
               <div class="skill-item">
-                <span class="skill-name">JavaScript/TypeScript</span>
+                <span class="skill-name">SvelteKit</span>
                 <div class="skill-bar">
-                  <div class="skill-progress" data-width="85%"></div>
+                  <div class="skill-progress" data-width="80%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <span class="skill-name">SvelteKit</span>
+                <span class="skill-name">TailwindCSS</span>
                 <div class="skill-bar">
-                  <div class="skill-progress" data-width="75%"></div>
+                  <div class="skill-progress" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Firebase Hosting/Vercel</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
                 </div>
               </div>
             </div>
@@ -210,24 +226,126 @@
             <div class="category-icon">
               <i class="fas fa-server"></i>
             </div>
-            <h3>Backend & Web3</h3>
+            <h3>Backend & Integration</h3>
             <div class="skills-list">
               <div class="skill-item">
-                <span class="skill-name">Node.js/Laravel</span>
+                <span class="skill-name">RESTful APIs/GraphQL</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Solidity/Ethers.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="92%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">WebSocket/Real-time</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Laravel Backend</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="78%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category animate-on-scroll">
+            <div class="category-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Database & Storage</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Firebase Firestore</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">PostgreSQL/Supabase</span>
                 <div class="skill-bar">
                   <div class="skill-progress" data-width="82%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <span class="skill-name">Solidity/Web3</span>
+                <span class="skill-name">SQLite/Hive</span>
                 <div class="skill-bar">
-                  <div class="skill-progress" data-width="78%"></div>
+                  <div class="skill-progress" data-width="90%"></div>
                 </div>
               </div>
               <div class="skill-item">
-                <span class="skill-name">PostgreSQL</span>
+                <span class="skill-name">Offline-first Architecture</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category animate-on-scroll">
+            <div class="category-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Dev Tools & Workflow</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Git/GitHub</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">CI/CD (GitHub Actions)</span>
                 <div class="skill-bar">
                   <div class="skill-progress" data-width="80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">App Store/Play Store</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="92%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Figma/UI Implementation</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category animate-on-scroll">
+            <div class="category-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Additional Skills</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Agile/Scrum Methodology</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Performance Optimization</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Cross-platform Development</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="92%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">API Testing (Postman)</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
                 </div>
               </div>
             </div>
@@ -343,10 +461,7 @@
         <div class="projects-grid">
           <div class="project-card animate-on-scroll">
             <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop"
-                alt="Little Wallet App"
-              />
+              <img src="./images/littlewallet.png" alt="Little Wallet App" />
               <div class="project-overlay">
                 <div class="project-links">
                   <a
@@ -377,10 +492,7 @@
           </div>
           <div class="project-card animate-on-scroll">
             <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
-                alt="Tanahub Web3 Platform"
-              />
+              <img src="./images/tanahub.png" alt="Tanahub Web3 Platform" />
               <div class="project-overlay">
                 <div class="project-links">
                   <a
@@ -410,10 +522,7 @@
           </div>
           <div class="project-card animate-on-scroll">
             <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
-                alt="Hararu Marketplace"
-              />
+              <img src="./images/hararu.png" alt="Hararu Marketplace" />
               <div class="project-overlay">
                 <div class="project-links">
                   <a
@@ -443,10 +552,7 @@
           </div>
           <div class="project-card animate-on-scroll">
             <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=400&fit=crop"
-                alt="Harti NFT App"
-              />
+              <img src="./images/harti.png" alt="Harti NFT App" />
               <div class="project-overlay">
                 <div class="project-links">
                   <a
@@ -475,10 +581,7 @@
           </div>
           <div class="project-card animate-on-scroll">
             <div class="project-image">
-              <img
-                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop"
-                alt="InstantAd.ai"
-              />
+              <img src="./images/instandad.png" alt="InstantAd.ai" />
               <div class="project-overlay">
                 <div class="project-links">
                   <a
